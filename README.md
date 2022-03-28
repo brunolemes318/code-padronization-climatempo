@@ -1,6 +1,11 @@
 <details>
   <summary>Como padronizar códigos com Husky, Eslint e Prettier </summary>
   <h3>Introdução</h3>
+  <h3>Eslint</h3>
+  <h3>Prettier</h3>
+  <h3>Husky</h3>
+  
+  
 </details>
 
 <h1>Introdução</h1>
