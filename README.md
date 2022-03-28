@@ -10,11 +10,16 @@ https://github.com/Microsoft/vscode-eslint
 Para instalar o Prettier em seu vs code:
 https://github.com/idahogurl/vs-code-prettier-eslint
 
+Para formatar códigos javascript automaticamente inclua esses códigos em seu ssetings.json do seu vscode:
+
 "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true
-  },
+  }
+  
+Para formatar códigos typescript automaticamente inclua esses códigos em seu ssetings.json do seu vscode:
+
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnPaste": true,
