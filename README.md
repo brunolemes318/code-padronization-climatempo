@@ -21,7 +21,7 @@ https://github.com/idahogurl/vs-code-prettier-eslint
 
 <pre>
 
-<code>
+<code style="color:orange">
 "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnPaste": true,
