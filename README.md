@@ -14,6 +14,8 @@ https://github.com/idahogurl/vs-code-prettier-eslint
 
 <strong>Para formatar códigos javascript automaticamente inclua esses códigos em seu ssetings.json do seu vscode:</strong>
 
+<pre>
+
 <code>
 "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -21,6 +23,8 @@ https://github.com/idahogurl/vs-code-prettier-eslint
     "editor.formatOnSave": true
   }
 </code>
+
+</pre>
   
 Para formatar códigos typescript automaticamente inclua esses códigos em seu ssetings.json do seu vscode:
 <code>
