@@ -11,5 +11,12 @@ Para instalar o Prettier em seu vs code:
 https://github.com/idahogurl/vs-code-prettier-eslint
 
 "[javascript]": {
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
-},
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+  },
