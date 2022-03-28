@@ -1,3 +1,5 @@
+
+
 Para padronizar códigos javascript puros ou com algum framework frontEnd a melhor opção sem dúvidas é um trabalho em equipe entre o esLint, o Prettier e também o Husky
 
 
@@ -12,16 +14,19 @@ https://github.com/idahogurl/vs-code-prettier-eslint
 
 <strong>Para formatar códigos javascript automaticamente inclua esses códigos em seu ssetings.json do seu vscode:</strong>
 
+<code>
 "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true
   }
+</code>
   
 Para formatar códigos typescript automaticamente inclua esses códigos em seu ssetings.json do seu vscode:
-
+<code>
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
   },
+</code>
