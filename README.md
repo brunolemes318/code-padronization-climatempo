@@ -1,5 +1,5 @@
 <details>
-  <summary>Como padronizar códigos com Husky, Eslint e Prettier </summary>
+  <summary><h1>Como padronizar códigos com Husky, Eslint e Prettier</h1> </summary>
   <h3>Introdução</h3>
   <h3>Eslint</h3>
   <h3>Prettier</h3>
@@ -21,6 +21,54 @@ https://github.com/Microsoft/vscode-eslint
 
 Para instalar o Prettier em seu vs code:
 https://github.com/idahogurl/vs-code-prettier-eslint
+
+
+Para instalar o Husky em seu projeto pode se usar o seguinte comando:
+
+<pre>
+<code> 
+npm install husky --save-dev 
+</code>
+</pre>
+
+E em seu package.json
+
+acrescente essa configuração que possibilitará termos em funcionamento as instruções que serão estartadas no pré commmit e no pré push 
+<pre>
+<code> 
+{
+  "husky": {
+    "hooks": {
+      "pre-commit": "", // seu comando vai aqui
+      "pre-push": "", // seu comando vai aqui
+      "...": "..."
+    }
+  }
+}
+</code>
+</pre>
+
+Para instalar o Lint-Staged em seu projeto pode se usar o seguinte comando:
+
+<pre>
+<code> 
+npm install lint-staged --save-dev
+</code>
+</pre>
+
+E em seu package.json
+
+acrescente essa configuração que possibilitará termos em funcionamento as instruções que serão estartadas no pré commmit e no pré push 
+<pre>
+<code> 
+  "lint-staged": {
+    "*.js,jx":[
+    
+    ]
+  }
+</code>
+</pre>
+
 
 <strong>Para formatar códigos javascript automaticamente inclua esses códigos em seu ssetings.json do seu vscode:</strong>
 
