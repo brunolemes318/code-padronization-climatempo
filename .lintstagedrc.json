@@ -1,7 +1,7 @@
 {
   "*.{js,jsx,ts,tsx}": [
     "eslint --fix",
-    "git add",
-    "jest"
+    "jest --bail --findRelatedTests",
+    "git add"
   ]
 }
