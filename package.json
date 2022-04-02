@@ -31,11 +31,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "yarn run test"
     }
-  },
-  "lint-staged": {
-    "**.{js,jsx,ts,tsx,json}": []
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
