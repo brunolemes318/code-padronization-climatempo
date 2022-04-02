@@ -1,34 +1,99 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
 
-First, run the development server:
+<details>
+  <summary><h1>Como padronizar códigos com Husky, Eslint e Prettier</h1> </summary>
+  <h3>Introdução</h3>
+  <h3>Eslint</h3>
+  <h3>Prettier</h3>
+  <h3>Husky</h3>
+  
+  
+</details>
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+<h1>Introdução</h1>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Para padronizar códigos javascript puros ou com algum framework frontEnd a melhor opção sem dúvidas é um trabalho em equipe entre o esLint, o Prettier e também o Husky
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Para instalar as extensões em seu vs code basta procurar em sua loja de extensões que você consegue acessar através do botão "extensions" no seu menu lateral do vs code. 
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Learn More
+Para instalar o Eslint em seu vs code:
+https://github.com/Microsoft/vscode-eslint
 
-To learn more about Next.js, take a look at the following resources:
+Para instalar o Prettier em seu vs code:
+https://github.com/idahogurl/vs-code-prettier-eslint
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Para instalar o Husky em seu projeto pode se usar o seguinte comando:
 
-## Deploy on Vercel
+<pre>
+<code> 
+npm install husky --save-dev 
+</code>
+</pre>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+E em seu package.json
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+acrescente essa configuração que possibilitará termos em funcionamento as instruções que serão estartadas no pré commmit e no pré push 
+<pre>
+<code> 
+{
+  "husky": {
+    "hooks": {
+      "pre-commit": "", // seu comando vai aqui
+      "pre-push": "", // seu comando vai aqui
+      "...": "..."
+    }
+  }
+}
+</code>
+</pre>
+
+Para instalar o Lint-Staged em seu projeto pode se usar o seguinte comando:
+
+<pre>
+<code> 
+npm install lint-staged --save-dev
+</code>
+</pre>
+
+E em seu package.json
+
+acrescente essa configuração que possibilitará termos em funcionamento as instruções que serão estartadas no pré commmit e no pré push 
+<pre>
+<code> 
+  "lint-staged": {
+    "*.js,jx":[
+    
+    ]
+  }
+</code>
+</pre>
+
+
+<strong>Para formatar códigos javascript automaticamente inclua esses códigos em seu ssetings.json do seu vscode:</strong>
+
+<pre>
+
+<code>
+"[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true
+  }
+</code>
+
+</pre>
+  
+<strong>Para formatar códigos typescript automaticamente inclua esses códigos em seu settings.json do seu vscode:</strong>
+
+<pre>
+<code>
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+  },
+</code>
+</pre>
