@@ -2,6 +2,6 @@
   "*.{js,jsx,ts,tsx}": [
     "eslint --fix",
     "git add",
-    "yarn run test"
+    "jest"
   ]
 }
