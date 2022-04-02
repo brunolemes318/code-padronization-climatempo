@@ -1,0 +1,58 @@
+{
+  "name": "codebase-next-js",
+  "version": "1.0.0",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org:climatempoteam/codebase-next-js.git"
+  },
+  "contributors": [
+    {
+      "name": "Abner Matheus Gomes Silva",
+      "email": "abner.silva@climatempo.com.br"
+    },
+    {
+      "name": "Bruno Lemes dos Santos",
+      "email": "bruno.santos@climatempo.io"
+    },
+    {
+      "name": "Gabriel Antonio Rissato Vancini",
+      "email": "gabriel.vancini@climatempo.io"
+    }
+  ],
+  "homepage": "https://bitbucket.org/climatempoteam/codebase-next-js/src/main/README.md",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prepare": "husky install",
+    "test": "jest --coverage"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**.{js,jsx,ts,tsx,json}": [
+      
+    ]
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.3",
+    "@testing-library/react": "^12.1.4",
+    "jest": "^27.5.1",
+    "next": "12.1.2",
+    "react": "18.0.0",
+    "react-dom": "18.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.12.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-config-next": "12.1.2",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.7",
+    "typescript": "^4.6.3"
+  }
+}
