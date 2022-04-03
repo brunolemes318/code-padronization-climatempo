@@ -19,6 +19,10 @@ Para instalar o Eslint em seu vs code:
 Para instalar o Prettier em seu vs code:
 <https://github.com/idahogurl/vs-code-prettier-eslint>
 
+<p>Que é essa extensão que podemos obter através da loja de extensões</p>
+
+<img src="https://i.ibb.co/qm88yz1/extens-o-eslint.png" alt="extens-o-eslint" border="0">
+
 Para instalar o Husky em seu projeto pode se usar o seguinte comando:
 
 <pre>
@@ -51,13 +55,13 @@ npm install lint-staged --save-dev
 
 E em seu package.json
 
-acrescente essa configuração que possibilitará termos em funcionamento as instruções que serão estartadas no pré commmit e no pré push
+acrescente essa configuração que possibilitará termos em funcionamento as instruções que serão iniciadas no pré commmit e no pré push
 
 <pre>
 <code>
   "lint-staged": {
     "**.{js,jsx,ts,tsx,json}": [
-        "yarn test --passWithNoTests"
+        "yarn test"
     ]
   },
 </code>
