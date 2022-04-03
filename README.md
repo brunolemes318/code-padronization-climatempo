@@ -1,4 +1,3 @@
-
 <details>
   <summary><h1>Como padronizar códigos com Husky, Eslint e Prettier</h1> </summary>
   <h3>Introdução</h3>
@@ -13,16 +12,13 @@
 
 Para padronizar códigos javascript puros ou com algum framework frontEnd a melhor opção sem dúvidas é um trabalho em equipe entre o esLint, o Prettier e também o Husky
 
-
-Para instalar as extensões em seu vs code basta procurar em sua loja de extensões que você consegue acessar através do botão "extensions" no seu menu lateral do vs code. 
-
+Para instalar as extensões em seu vs code basta procurar em sua loja de extensões que você consegue acessar através do botão "extensions" no seu menu lateral do vs code.
 
 Para instalar o Eslint em seu vs code:
 https://github.com/Microsoft/vscode-eslint
 
 Para instalar o Prettier em seu vs code:
 https://github.com/idahogurl/vs-code-prettier-eslint
-
 
 Para instalar o Husky em seu projeto pode se usar o seguinte comando:
 
@@ -34,7 +30,8 @@ npm install husky --save-dev
 
 E em seu package.json
 
-acrescente essa configuração que possibilitará termos em funcionamento as instruções que serão estartadas no pré commmit e no pré push 
+acrescente essa configuração que possibilitará termos em funcionamento as instruções que serão estartadas no pré commmit e no pré push
+
 <pre>
 <code> 
 {
@@ -59,7 +56,8 @@ npm install lint-staged --save-dev
 
 E em seu package.json
 
-acrescente essa configuração que possibilitará termos em funcionamento as instruções que serão estartadas no pré commmit e no pré push 
+acrescente essa configuração que possibilitará termos em funcionamento as instruções que serão estartadas no pré commmit e no pré push
+
 <pre>
 <code> 
   "lint-staged": {
@@ -69,7 +67,6 @@ acrescente essa configuração que possibilitará termos em funcionamento as ins
   }
 </code>
 </pre>
-
 
 <strong>Para formatar códigos javascript automaticamente inclua esses códigos em seu ssetings.json do seu vscode:</strong>
 
@@ -84,7 +81,7 @@ acrescente essa configuração que possibilitará termos em funcionamento as ins
 </code>
 
 </pre>
-  
+
 <strong>Para formatar códigos typescript automaticamente inclua esses códigos em seu settings.json do seu vscode:</strong>
 
 <pre>
@@ -98,4 +95,6 @@ acrescente essa configuração que possibilitará termos em funcionamento as ins
 </pre>
 
 <strong>Para instalar o jest e iniciar rotinas de testes primeiro precisamos definir a hierarquia padrão</strong>
+
+<img src="https://i.ibb.co/z2nJbg2/estrutura-testes.png" alt="estrutura-testes" border="0"/>
 
