@@ -96,3 +96,6 @@ acrescente essa configuração que possibilitará termos em funcionamento as ins
   },
 </code>
 </pre>
+
+<strong>Para instalar o jest e iniciar rotinas de testes primeiro precisamos definir a hierarquia padrão</strong>
+
