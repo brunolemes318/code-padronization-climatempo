@@ -32,7 +32,9 @@
   },
   "lint-staged": {
    
-    "*.js":["eslint --cache --fix", "yarn test"]
+    "./*.js":[
+      "yarn test"
+    ]
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
