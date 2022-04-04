@@ -12,6 +12,27 @@
 Para padronizar seus códigos javascript puros ou com algum framework a melhor opção sem dúvidas é um trabalho em equipe entre o esLint um validador de códigos javascript, o Prettier como formatador javascript, e também o Husky que permite que criemos ações antes de qualquer commit ou push, com a ajuda dessa equipe de ferramentas, você e sua equipe poderão padronizar os códigos dos seus projetos.
 </p>
 
+
+<p>
+Conforme no exemplo a seguir temos a validação de um código javascript, que por exemplo natureza aceita ponto e vírgula em seu escopo, mas foi adicionado essa exigência de retirada através do eslint, no campo de rules:
+</p>
+
+<img src="https://i.ibb.co/qyYR7bH/ponto-e-virgula-exemplo.png" alt="ponto-e-virgula-exemplo" border="0">
+
+<pre>
+<code>
+"rules": {
+    "no-undef": ["off"],
+    "linebreak-style": ["error", "unix"],
+    "quotes": ["error", "single"],
+    "semi": ["error", "never"]
+  }
+</code>
+</pre>
+
+
+
+
 <p>
 Para instalar as extensões em seu vs code basta procurar em sua loja de extensões que você consegue acessar através do botão "extensions" no seu menu lateral do vs code.
 </p>
@@ -171,4 +192,5 @@ E acrescente em seu package.json o seguinte trecho de código:
 
 <p>Com essas configurações e com um test de exemplo já configurado no codebase, já podemos testar com yarn test ou com npm test, os testes também ser disparados quando fizer um commit através do git commit -m "" e também  são iniciados quando iniciamos o projeto com yarn start ou npm start</p>
 
+Conforme o exemplo a seguir, foi deixado um erro de propósito em um teste e como estava errado, o husky juntamente com o jest impediu que o bad code fosse enviado ao repositório.
 <img src="https://i.ibb.co/JptBGfw/teste-com-o-git-commit.png" alt="teste-com-o-git-commit" border="0">
