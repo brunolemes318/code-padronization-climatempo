@@ -27,8 +27,7 @@
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky install",
-    "test": "jest --bail --findRelatedTests",
-    "test:staged": "jest --bail --findRelatedTests"
+    "test": "jest --bail --findRelatedTests"
   },
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx}": [
