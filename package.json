@@ -27,14 +27,12 @@
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky install",
-    "test": "jest --coverage",
+    "test": "jest",
     "test:staged": "jest --bail --findRelatedTests"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
-      "yarn test"
-    ],
-    "*.js":["eslint --cache --fix"]
+   
+    "*.js":["eslint --cache --fix", "yarn test"]
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
