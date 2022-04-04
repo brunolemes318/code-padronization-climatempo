@@ -33,9 +33,8 @@
   "lint-staged": {
     "**.{js,jsx,ts,tsx}": [
       "eslint --fix",
-      "test"
+      "yarn test"
     ]
-    
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
@@ -46,6 +45,9 @@
     "react-dom": "18.0.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.17.8",
+    "@babel/preset-env": "^7.16.11",
+    "babel-jest": "^27.5.1",
     "eslint": "^8.12.0",
     "eslint-config-next": "12.1.2",
     "eslint-plugin-react": "^7.29.4",
