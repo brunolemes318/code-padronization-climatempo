@@ -9,6 +9,13 @@ Para padronizar seus códigos javascript puros ou com algum framework a melhor o
 Conforme no exemplo a seguir temos a validação de um código javascript, que por exemplo natureza aceita ponto e vírgula em seu escopo, mas foi adicionado essa exigência de retirada através do eslint, no campo de rules:
 </p>
 
+<img src="https://i.ibb.co/qyYR7bH/ponto-e-virgula-exemplo.png" alt="ponto-e-virgula-exemplo" border="0">
+
+<p>
+Podemos adicionar uma infinidade de regras para padronizar o código.
+E podemos obter mais nesse link: <a href="https://eslint.org/docs/rules/">Rules</a>
+</p>
+
 <h4>Regras de Código até agora testadas</h4>
 
 <ul>
@@ -47,7 +54,6 @@ no-undef: ["error"]
 </li>
 </ul>
 
-<img src="https://i.ibb.co/qyYR7bH/ponto-e-virgula-exemplo.png" alt="ponto-e-virgula-exemplo" border="0">
 
 <p>Para instalar o Prettier com o plugin que o permite conversar com o eslint por favor use esse comando: </p>
 
