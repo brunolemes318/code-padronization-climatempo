@@ -1,11 +1,4 @@
-<details>
-  <summary><h1>Como padronizar códigos com Husky, Eslint e Prettier, e como ter uma rotina de testes com o jest</h1> </summary>
-  <h3>Introdução</h3>
-  <h3>Eslint</h3>
-  <h3>Prettier</h3>
-  <h3>Husky</h3>
-  
-</details>
+<h1>Como padronizar códigos com Husky, Eslint e Prettier, e como ter uma </h1>
 
 <h1>Introdução</h1>
 <p>
