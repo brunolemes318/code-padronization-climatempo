@@ -30,9 +30,6 @@ Conforme no exemplo a seguir temos a validação de um código javascript, que p
 </code>
 </pre>
 
-
-
-
 <p>
 Para instalar as extensões em seu vs code basta procurar em sua loja de extensões que você consegue acessar através do botão "extensions" no seu menu lateral do vs code.
 </p>
@@ -178,7 +175,7 @@ module.exports = {
 </pre>
 
 <p>
-E acrescente em seu package.json o seguinte trecho de código:
+E acrescente em seu package.json o seguinte trecho de código, no campo de scripts:
 </p>
 
 <pre>
@@ -192,5 +189,47 @@ E acrescente em seu package.json o seguinte trecho de código:
 
 <p>Com essas configurações e com um test de exemplo já configurado no codebase, já podemos testar com yarn test ou com npm test, os testes também ser disparados quando fizer um commit através do git commit -m "" e também  são iniciados quando iniciamos o projeto com yarn start ou npm start</p>
 
-Conforme o exemplo a seguir, foi deixado um erro de propósito em um teste e como estava errado, o husky juntamente com o jest impediu que o bad code fosse enviado ao repositório.
+<p>Conforme o exemplo a seguir, foi deixado um erro de propósito em um teste e como estava errado, o husky juntamente com o jest impediu que o bad code fosse enviado ao repositório.</p>
 <img src="https://i.ibb.co/JptBGfw/teste-com-o-git-commit.png" alt="teste-com-o-git-commit" border="0">
+
+
+<h4>Regras de Código até agora testadas</h4>
+
+<ul>
+<li>
+[Para definir padrão para criar funções]
+
+https://eslint.org/docs/rules/func-style
+
+func-style: ["error", "declaration"]*/
+</li>
+
+<li>
+[Para informar que há variaveis não usadas]
+
+https://eslint.org/docs/rules/no-unused-vars
+
+no-unused-vars: ["error", { "vars": "local" }]
+</li>
+
+
+<li>
+[Para evitar consoles.logs perdidos ao enviar para a produção]
+
+https://eslint.org/docs/rules/no-console
+
+"no-console": ["error"]
+</li>
+
+[Para evitar falsos erros relacionados a "não está definidos"]
+
+https://eslint.org/docs/rules/no-undef
+
+no-undef: ["error"]
+
+<li>
+
+</li>
+
+
+<li>
