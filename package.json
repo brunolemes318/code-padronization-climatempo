@@ -36,8 +36,11 @@
     }
   },
   "lint-staged": {
-    "**.{js,jsx,ts,tsx,json}": [
-      "yarn test --passWithNoTests"
+    "**/*.js": [
+      "prettier --write",
+      "eslint src/ --fix",
+      "jest --bail --findRelatedTests",
+      "git add"
     ]
   },
   "dependencies": {
