@@ -37,8 +37,7 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
-      "yarn run test",
-      "git add"
+      "jest"
     ]
   },
   "dependencies": {
