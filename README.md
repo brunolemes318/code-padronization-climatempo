@@ -9,27 +9,34 @@
 
 <h1>Introdução</h1>
 <p>
-Para padronizar códigos javascript puros ou com algum framework frontEnd a melhor opção sem dúvidas é um trabalho em equipe entre o esLint um validador de códigos javascript, o Prettier como formatador javascript, e também o Husky que permite que criemos ações antes de qualquer commit ou push.
+Para padronizar seus códigos javascript puros ou com algum framework a melhor opção sem dúvidas é um trabalho em equipe entre o esLint um validador de códigos javascript, o Prettier como formatador javascript, e também o Husky que permite que criemos ações antes de qualquer commit ou push, com a ajuda dessa equipe de ferramentas, você e sua equipe poderão padronizar os códigos dos seus projetos.
 </p>
 
 <p>
 Para instalar as extensões em seu vs code basta procurar em sua loja de extensões que você consegue acessar através do botão "extensions" no seu menu lateral do vs code.
 </p>
 
-Para instalar o Eslint em seu vs code:
+<p>Para instalar o Eslint em seu vs code:</p>
 <https://github.com/Microsoft/vscode-eslint>
-
-<p>Que é essa extensão que podemos obter através da loja de extensões</p>
 
 <img src="https://i.ibb.co/qm88yz1/extens-o-eslint.png" alt="extens-o-eslint" border="0">
 
-Para instalar o Husky e o lint-stage juntos em seu projeto pode se usar o seguinte comando:
+<p>Para instalar o Husky e o lint-stage juntos em seu projeto pode se usar o seguinte comando:
+</p>
 
+<p><strong>Com o npm</strong></p>
 <pre>
 <code>
-npm install husky --save-dev
+npm install lint-staged husky --save-dev
 </code>
 </pre>
+<p><strong>Com o yarn</strong></p>
+<pre>
+<code>
+yarn add -D lint-staged husky
+</code>
+</pre>
+
 <strong>
 E em seu package.json
 </strong>
@@ -48,18 +55,18 @@ acrescente essa configuração que possibilitará termos em funcionamento as ins
 </code>
 </pre>
 
-Para instalar o Lint-Staged em seu projeto pode se usar o seguinte comando:
-
+<p>Para instalar o Lint-Staged em seu projeto pode se usar o seguinte comando:
+</p>
 <pre>
 <code>
 npm install lint-staged --save-dev
 </code>
 </pre>
 
-E em seu package.json
+<p>E em seu package.json</p>
 
-acrescente essa configuração que possibilitará termos em funcionamento as instruções que serão iniciadas no pré commmit e no pré push
-
+<p>acrescente essa configuração que possibilitará termos em funcionamento as instruções que serão iniciadas no pré commmit e no pré push
+</p>
 <pre>
 <code>
   "lint-staged": {
@@ -162,5 +169,4 @@ E acrescente em seu package.json o seguinte trecho de código:
 </code>
 </pre>
 
-<p>Com essas configurações é com um test de exemplo já configurado no codebase, já podemos testar com yarn test ou com npm test, os testes também ser disparados quando fizer um commit através do git commit -m "" e também ao dar inicio ao projeto com yarn start ou npm start</p>
-
+<p>Com essas configurações e com um test de exemplo já configurado no codebase, já podemos testar com yarn test ou com npm test, os testes também ser disparados quando fizer um commit através do git commit -m "" e também  são iniciados quando iniciamos o projeto com yarn start ou npm start</p>
