@@ -5,12 +5,59 @@
 Para padronizar seus códigos javascript puros ou com algum framework a melhor opção sem dúvidas é um trabalho em equipe entre o esLint um validador de códigos javascript, o Prettier como formatador javascript, e também o Husky que permite que criemos ações antes de qualquer commit ou push, com a ajuda dessa equipe de ferramentas, você e sua equipe poderão padronizar os códigos dos seus projetos.
 </p>
 
-
 <p>
 Conforme no exemplo a seguir temos a validação de um código javascript, que por exemplo natureza aceita ponto e vírgula em seu escopo, mas foi adicionado essa exigência de retirada através do eslint, no campo de rules:
 </p>
 
+<h4>Regras de Código até agora testadas</h4>
+
+<ul>
+<li>
+[Para definir padrão para criar funções]
+
+<https://eslint.org/docs/rules/func-style>
+
+func-style: ["error", "declaration"]*/
+</li>
+
+<li>
+[Para informar que há variaveis não usadas]
+
+<https://eslint.org/docs/rules/no-unused-vars>
+
+no-unused-vars: ["error", { "vars": "local" }]
+</li>
+
+<li>
+[Para evitar consoles.logs perdidos ao enviar para a produção]
+
+<https://eslint.org/docs/rules/no-console>
+
+"no-console": ["error"]
+</li>
+
+<li>
+
+[Para evitar falsos erros relacionados a "não está definidos"]
+
+<https://eslint.org/docs/rules/no-undef>
+
+no-undef: ["error"]
+
+</li>
+</ul>
+
 <img src="https://i.ibb.co/qyYR7bH/ponto-e-virgula-exemplo.png" alt="ponto-e-virgula-exemplo" border="0">
+
+<p>Para instalar o Prettier com o plugin que o permite conversar com o eslint por favor use esse comando: </p>
+
+<pre>
+<code>
+yarn add eslint-plugin-prettier eslint-plugin-react eslint-config-airbnb eslint-config-prettier -D
+
+</code>
+
+</pre>
 
 <pre>
 <code>
@@ -185,41 +232,3 @@ E acrescente em seu package.json o seguinte trecho de código, no campo de scrip
 <p>Conforme o exemplo a seguir, foi deixado um erro de propósito em um teste e como estava errado, o husky juntamente com o jest impediu que o bad code fosse enviado ao repositório.</p>
 <img src="https://i.ibb.co/JptBGfw/teste-com-o-git-commit.png" alt="teste-com-o-git-commit" border="0">
 
-
-<h4>Regras de Código até agora testadas</h4>
-
-<ul>
-<li>
-[Para definir padrão para criar funções]
-
-https://eslint.org/docs/rules/func-style
-
-func-style: ["error", "declaration"]*/
-</li>
-
-<li>
-[Para informar que há variaveis não usadas]
-
-https://eslint.org/docs/rules/no-unused-vars
-
-no-unused-vars: ["error", { "vars": "local" }]
-</li>
-
-
-<li>
-[Para evitar consoles.logs perdidos ao enviar para a produção]
-
-https://eslint.org/docs/rules/no-console
-
-"no-console": ["error"]
-</li>
-
-<li>
-
-[Para evitar falsos erros relacionados a "não está definidos"]
-
-https://eslint.org/docs/rules/no-undef
-
-no-undef: ["error"]
-
-</li>
