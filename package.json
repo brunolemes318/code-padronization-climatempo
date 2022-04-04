@@ -31,10 +31,12 @@
     "test:staged": "jest --bail --findRelatedTests"
   },
   "lint-staged": {
-   
-    "./*.js":[
-      "yarn test"
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "yarn test",
+      "git add"
     ]
+    
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
