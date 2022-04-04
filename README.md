@@ -162,4 +162,5 @@ E acrescente em seu package.json o seguinte trecho de código:
 </code>
 </pre>
 
-<p>Com essas configurações é com um test de exemplo já configurado no codebase, já podemos testar com yarn test ou com npm test, os testes também ser disparados quando fizer um commit atravéis do git commit -m "" e também ao dar inicio ao projeto com yarn start ou npm start</p>
+<p>Com essas configurações é com um test de exemplo já configurado no codebase, já podemos testar com yarn test ou com npm test, os testes também ser disparados quando fizer um commit através do git commit -m "" e também ao dar inicio ao projeto com yarn start ou npm start</p>
+

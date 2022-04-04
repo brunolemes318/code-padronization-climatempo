@@ -37,7 +37,7 @@
   },
   "lint-staged": {
     "**.{js,jsx,ts,tsx,json}": [
-  
+      "yarn test --passWithNoTests"
     ]
   },
   "dependencies": {
