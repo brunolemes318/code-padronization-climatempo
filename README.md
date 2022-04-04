@@ -221,15 +221,12 @@ https://eslint.org/docs/rules/no-console
 "no-console": ["error"]
 </li>
 
+<li>
+
 [Para evitar falsos erros relacionados a "não está definidos"]
 
 https://eslint.org/docs/rules/no-undef
 
 no-undef: ["error"]
 
-<li>
-
 </li>
-
-
-<li>
