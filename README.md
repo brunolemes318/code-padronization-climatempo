@@ -1,5 +1,5 @@
 <details>
-  <summary><h1>Como padronizar códigos com Husky, Eslint e Prettier</h1> </summary>
+  <summary><h1>Como padronizar códigos com Husky, Eslint e Prettier, e como ter uma rotina de testes com o jest</h1> </summary>
   <h3>Introdução</h3>
   <h3>Eslint</h3>
   <h3>Prettier</h3>
@@ -9,7 +9,7 @@
 
 <h1>Introdução</h1>
 <p>
-Para padronizar códigos javascript puros ou com algum framework frontEnd a melhor opção sem dúvidas é um trabalho em equipe entre o esLint, o Prettier e também o Husky
+Para padronizar códigos javascript puros ou com algum framework frontEnd a melhor opção sem dúvidas é um trabalho em equipe entre o esLint um validador de códigos javascript, o Prettier como formatador javascript, e também o Husky que permite que criemos ações antes de qualquer commit ou push.
 </p>
 
 <p>
@@ -19,14 +19,11 @@ Para instalar as extensões em seu vs code basta procurar em sua loja de extens�
 Para instalar o Eslint em seu vs code:
 <https://github.com/Microsoft/vscode-eslint>
 
-Para instalar o Prettier em seu vs code:
-<https://github.com/idahogurl/vs-code-prettier-eslint>
-
 <p>Que é essa extensão que podemos obter através da loja de extensões</p>
 
 <img src="https://i.ibb.co/qm88yz1/extens-o-eslint.png" alt="extens-o-eslint" border="0">
 
-Para instalar o Husky em seu projeto pode se usar o seguinte comando:
+Para instalar o Husky e o lint-stage juntos em seu projeto pode se usar o seguinte comando:
 
 <pre>
 <code>
@@ -37,7 +34,7 @@ npm install husky --save-dev
 E em seu package.json
 </strong>
 <p>
-acrescente essa configuração que possibilitará termos em funcionamento as instruções que serão estartadas no pré commmit e no pré push
+acrescente essa configuração que possibilitará termos em funcionamento as instruções que serão iniciadas no pré commmit e no pré push
 
 </p>
 
