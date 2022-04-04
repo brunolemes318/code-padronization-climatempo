@@ -30,15 +30,11 @@
     "test": "jest --coverage",
     "test:staged": "jest --bail --findRelatedTests"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
       "yarn test"
-    ]
+    ],
+    "*.js":["eslint --cache --fix"]
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
